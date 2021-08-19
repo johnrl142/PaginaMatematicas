@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salarios</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="header__container">
+            <h1>Calcula media de salarios</h1>
+            <p>En este ejercicio podrás calcular el valor de un producto aplicando cualquier descuento disponible.</p>
+        </div>
+        <section>
+            <nav>
+                <ol class="header__button">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./figuras.html">Figuras Geometricas</a></li>
+                    <li><a href="./descuentos.html" >Descuentos</a></li>
+                    <li><a href="./promedioMedianaModa.html" >Promedio, mediana y moda</a></li>
+                    <li><a href="./salarios.html" >Salarios</a></li>
+                </ol>
+            </nav> 
+        </section>   
+    </header>
+
+    <section class="main__container">
+        <section class="main__container-card"> 
+                <h2>Ingresa el monto de los salarios a evaluar separados por una coma:</h2>
+                <form >
+                    <label for="inputSalario">Ingresa tus datos: </label>
+                    <input id="inputSalario" type="text" placeholder="Ej: 1000, 2000, 550 etc.." >
+                </form>
+                <button type="button" onclick="medianaSalarios()">Calcular el promedio de salarios</button>
+                <p id="medianaSalarios"></p>
+                <p id="mmedianaColTop10"></p>
+        </section>
+    </section>
+
+
+
+    <footer class="footer"> 
+        <p>Desarrollado por John E. Reyes Lora</p><br>
+        <div>
+        <a href="https://wa.link/igvl4b"><img class="imgFooter" src="../Icons/003-whatsapp.svg" alt=""></a>
+        <a href="https://www.linkedin.com/in/jorel142/"><img class="imgFooter" src="../Icons/010-linkedin.svg" alt=""></a>
+        <a href="https://twitter.com/MasterMouse_C2"><img class="imgFooter" src="../Icons/013-twitter.svg" alt=""></a>
+        <a href="https://github.com/johnrl142"><img class="imgFooter" src="../Icons/guthub.svg" alt=""></a>
+        </div> 
+    </footer> 
+
+    <script src="../analitys/salarios.js"></script>
+    <script src="../analitys/analisis.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+:root {
+    /* Colores */
+    --blue: blue;
+    --blue-Secundario: #1a9af7;
+    --blue-Soft: #e7f5ff;
+    --grey: #bababa;
+    --warm-black: #282623;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+    background: linear-gradient(232deg, #282623, #1a9af7);
+    background-size: 400% 400%;
+
+    -webkit-animation: bgAnimateBitcoin 20s ease infinite;
+    -moz-animation: bgAnimateBitcoin 20s ease infinite;
+    animation: bgAnimateBitcoin 20s ease infinite;
+}
+
+@-webkit-keyframes bgAnimateBitcoin {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes bgAnimateBitcoin {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bgAnimateBitcoin {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/*header*/
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    text-align: center;    
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;  
+    border: 1 solid black; 
+}
+
+.header__container h1 {
+    padding-top: 10px;
+    font-size: 3rem;
+    color: var(--blue-Soft);
+}
+
+.header__container p {
+    padding-top: 5px;
+    font-size: 1rem;
+    color: var(--blue-Soft);
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+header nav .header__button {
+    width: auto;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .header__button a {
+    color: var(--blue-Soft);
+    text-decoration: none;
+    border: 1px solid var(--blue-Secundario);
+    background-color: var(--blue-Secundario);
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+
+/*imagen header FIGURAS.HTML*/
+
+.header__container img {
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    padding-bottom: 10px;   
+}
+/*fin de header*/
+
+/* empieza el main*/
+.main__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: var(--blue-Soft);
+    border: 1 solid var(--grey);
+    border-radius: 5px;
+    padding: 30px;  
+    
+}
+
+.main__container-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: space-evenly; 
+    width: 220px;
+    background-color: var(--grey);
+    border: 1px solid var(--warm-black);
+    border-radius: 10px;
+    padding: 10px;    
+}
+
+.main__container-card a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    font-size: 2rem;
+    margin-bottom: 10px;   
+}
+
+.main__container-card h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.4rem;
+    padding-bottom: 10px;
+}
+
+.main__container-card form {
+    padding-bottom: 10px;
+}
+
+.main__container-card button {
+    width: 100px;
+    height: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: var(--blue-Secundario);
+    border: 1 solid var(--warm-black);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+
+.main__container-card button:hover{
+    transition: .2s;
+    background: var(--blue-Secundario);
+    transform: scale(1.1);
+    box-shadow: 0 0 8px 0 blue; /*brillo de boton*/
+}
+
+/*IMAGENES CONTENEDOR FIGUTAS-HTML*/
+.main__container-card div {
+    width: auto;
+    height: auto;
+}
+
+.main__container-card-imgC{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-image: url(./image/cuadrado.png);
+    background-size: cover;
+}
+
+.main__container-card-imgT {
+    display: inline-block;
+    width: 68px;
+    height: 60px;
+    background-image: url(./image/triangulo.png);
+    background-size: cover;
+}
+
+.main__container-card-imgCi {
+    display: inline-block;
+    width: 90px;
+    height: 60px;
+    background-image: url(./image/circulo.png);
+    background-size: cover;
+}
+
+/*plus DESCUENTOS.HTML*/
+.main__container-card input {
+    margin-bottom: 10px;
+}
+
+.main__container-card div {
+    margin-bottom: 10px;
+}
+
+
+/*fotter*/
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: var(--blue-Soft);
+    position: absolute; left: 0; bottom: 0; width: 100%;
+
+}
+
+.footer p {
+   font-size: 1rem;
+   font-weight: bold;
+   line-height: 1.2rem;
+}
+
+.footer a {
+    cursor:pointer;
+    font-size: 1rem;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.imgFooter {
+    width: 20px;
+}

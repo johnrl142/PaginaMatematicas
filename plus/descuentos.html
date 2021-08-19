@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y descuentos</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="header__container">
+            <h1>¡Descuentos y promociones!</h1>
+            <p>En este ejercicio podrás calcular el valor de un producto aplicando cualquier descuento disponible.</p>
+        </div>
+        <section>
+            <nav>
+                <ol class="header__button">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./figuras.html">Figuras Geometricas</a></li>
+                    <li><a href="./descuentos.html" >Descuentos</a></li>
+                    <li><a href="./promedioMedianaModa.html" >Promedio, mediana y moda</a></li>
+                </ol>
+            </nav> 
+        </section>   
+    </header>
+
+    <main>
+        <section class="main__container">
+            <section class="main__container-card"> 
+                <h2>Calcula el precio a pagar por tus productos con descuento normal</h2>
+        
+                <form action="">
+                    <label for="inputPrice">Escribe el precio de tu producto:</label>
+                    <input id="inputPrice" type="number">
+                    <label for="inputDiscount">Escribe el descuento de tu producto</label>
+                    <input id="inputDiscount" type="number">
+                </form>
+                <button type="button" onclick="OnClickButtonPriceDiscount()">Calcular descuento</button>
+                <p id="ResultP"></p>
+            </section>
+
+            <section class="main__container-card">
+                <h2>Calcula el precio a pagar por tus productos con CUPONES de descuento</h2>
+                <form action="">
+                    <label for="InputPrice2">Escribe el precio de tu producto:</label>
+                    <input id="InputPrice2" type="number">
+                    <label for="InputCoupon">Escribe el codigo de tu cupon (Esta escrito en la parte inferior de tu tarjeta de descuentos):</label>
+                    <input id="InputCoupon" type="text">    
+                </form>
+                <button type="button" onclick="OnClickButtonCuponText()">Ver descuento por cupón</button>
+                <p id="ResultCuponText"></p>
+            </section>
+
+            <section class="main__container-card">
+                <h2>Escoge en la lista tu cupón asignado y verifica el valor de tu compra con el descuento:</h2>
+                <form action="">
+                    <label for="InputPrice3">Escribe el precio de tu producto:</label>
+                    <input id="InputPrice3" type="number">
+                    <div>
+                        <label for="Cupons">Escoge tu Cupón: </label>
+                        <select class="Cupons" name="Cupons" id="Cupons">
+                        <option value="0">No tengo</option>
+                        <option value="80">NewYear</option>
+                        <option value="10">TheGroundhogDay</option>
+                        <option value="25">CanadaDay</option>
+                        <option value="20">LaborDay</option>
+                        <option value="20">ThanksGivindDay</option>
+                        <option value="20">BoxingDay</option>
+                        <option value="15">FamiliDay</option>
+                        <option value="60">BlackFriday</option>
+                        </select>
+                    </div>    
+                </form>
+                <button type="button" onclick="OnClickButtonCupon()">Ver descuento por cupón</button>
+                <p id="ResulCuponSelect"></p>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer"> 
+        <p>Desarrollado por John E. Reyes Lora</p><br>
+        <div>
+        <a href="https://wa.link/igvl4b"><img class="imgFooter" src="../Icons/003-whatsapp.svg" alt=""></a>
+        <a href="https://www.linkedin.com/in/jorel142/"><img class="imgFooter" src="../Icons/010-linkedin.svg" alt=""></a>
+        <a href="https://twitter.com/MasterMouse_C2"><img class="imgFooter" src="../Icons/013-twitter.svg" alt=""></a>
+        <a href="https://github.com/johnrl142"><img class="imgFooter" src="../Icons/guthub.svg" alt=""></a>
+        </div> 
+    </footer> 
+    <script src="../analitys/descuentos.js"></script>
+</body>
+</html>
